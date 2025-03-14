@@ -33,7 +33,7 @@ search.addEventListener('click', () => {
 
             switch (json.weather[0].main) {
                 case 'Clear':
-                    image.src = 'clear.png';
+                    image.src = 'clear-sky.png';
                     break;
 
                 case 'Rain':
@@ -53,7 +53,7 @@ search.addEventListener('click', () => {
                     break;
 
                 default:
-                    image.src = 'default.png';
+                    image.src = 'default.jpg';
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
